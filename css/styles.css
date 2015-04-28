@@ -1,0 +1,179 @@
+/*
+  LaunchPad Lab
+  v1.0 | 2015
+
+  Colors:
+    Base Black: #333333;
+    Base Blue:  #00ADEF;
+    Dark Blue:  #0094CC;
+    Base Grey:  #CCCCCC;
+    Base White: #FFFFFF;
+
+  Typography:
+    Helvetica, Arial, sans-serif;
+
+  Legend:
+    1. Global Styles
+    2. Lead In
+    3. Cards
+    4. Footer
+*/
+
+
+/* =====================
+ 1. Global Styles
+====================== */
+html,
+body{
+  height: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  font: 100%/1.618;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  margin-bottom: 10px;
+  overflow: visible;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 24px; }
+h3 { font-size: 21px; }
+h4 { font-size: 18px; }
+h5 { font-size: 14px; }
+h6 { font-size: 11px; }
+
+p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.wrapper{
+  max-width: 960px;
+  min-width: 960px;
+  margin: 0 auto;
+}
+
+.inverse-header,
+.inverse-body-copy{
+  color: #FFFFFF;
+}
+
+a{
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button{
+  background-color: #00ADEF;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  color: #FFFFFF;
+  display: inline-block;
+  margin: 10px auto;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.button:hover{
+ color: #0094CC;
+}
+
+/* =====================
+ 2. Lead In Section
+====================== */
+.lead-section{
+  background-color: #00ADEF;
+  padding: 20px;
+}
+
+.logo-title{
+  color: #FFFFFF;
+}
+
+.logo-subtitle{
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.lead-in-content-container{
+  padding: 175px 0 50px 0;
+}
+
+.main-title{
+  font-size: 50px;
+  margin-bottom: 40px;
+  overflow: visible;
+}
+
+.lead-in-body-text{
+  overflow: visible;
+  width: 600px;
+}
+
+
+/* =====================
+ 3. About Section
+====================== */
+.about-section{
+  background-color: #F1F1F1;
+  padding: 50px 0;
+}
+
+.horizontal-divider{
+  border: none;
+  border-top: 5px solid #CCCCCC;
+}
+
+.about-section-card-list li{
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  list-style: none;
+  margin: 25px 50px 25px 0;
+  width: 284px;
+  vertical-align: top;
+}
+
+.about-section-card-list li:last-child{
+  margin-right: 0;
+}
+
+.about-section-card-list li img{
+  width: 100%;
+}
+
+.card-content{
+  padding: 20px;
+}
+
+.card-content .button{
+  display: block;
+  margin: 20px auto 5px;
+}
+
+
+/* =====================
+ 4. Footer
+====================== */
+.footer{
+  background-color: #CCCCCC;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer h6{
+  margin-bottom: 0;
+}
