@@ -1,4 +1,4 @@
-[Liftoff By LaunchPad Lab](http://cl.ly/YHrd/logo.png)
+![Liftoff By LaunchPad Lab](http://cl.ly/YHrd/logo.png)
 
 # Liftoff
 Getting Started With HTML/CSS
