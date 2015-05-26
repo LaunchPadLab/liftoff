@@ -14,9 +14,7 @@
 
   Legend:
     1. Global Styles
-    2. Lead In
-    3. Cards
-    4. Footer
+    2. Card
 */
 
 
@@ -25,8 +23,10 @@
 ====================== */
 html,
 body{
-  height: 100%;
+  background-color: #00ADEF;
+  font-family: Helvetica, Arial, sans-serif;
   margin: 0 auto;
+  padding-top: 10px;
   overflow-x: hidden;
 }
 
@@ -48,20 +48,10 @@ h5 { font-size: 14px; }
 h6 { font-size: 11px; }
 
 p{
-  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-}
-
-.wrapper{
-  max-width: 960px;
-  min-width: 960px;
-  margin: 0 auto;
-}
-
-.inverse-header,
-.inverse-body-copy{
-  color: #FFFFFF;
 }
 
 a{
@@ -70,110 +60,100 @@ a{
   text-decoration: none;
 }
 
+li{
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
 .button{
-  background-color: #00ADEF;
+  background-color: #C4DC6E;
   -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
   -o-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   color: #FFFFFF;
-  display: inline-block;
-  margin: 10px auto;
+  display: block;
+  margin: 25px auto 0;
   padding: 10px 15px;
   text-align: center;
 }
 
 .button:hover{
- color: #0094CC;
+ opacity: 0.75
+}
+
+strong{
+  font-weight: bold;
 }
 
 /* =====================
- 2. Lead In Section
+ 2. Card
 ====================== */
-.lead-section{
-  background-color: #00ADEF;
-  padding: 20px;
-}
-
-.logo-title{
-  color: #FFFFFF;
-}
-
-.logo-subtitle{
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.lead-in-content-container{
-  padding: 175px 0 50px 0;
-}
-
-.main-title{
-  font-size: 50px;
-  margin-bottom: 40px;
-  overflow: visible;
-}
-
-.lead-in-body-text{
-  overflow: visible;
-  width: 600px;
-}
-
-
-/* =====================
- 3. About Section
-====================== */
-.about-section{
-  background-color: #F1F1F1;
-  padding: 50px 0;
-}
-
-.horizontal-divider{
-  border: none;
-  border-top: 5px solid #CCCCCC;
-}
-
-.about-section-card-list li{
+.card{
   background-color: #FFFFFF;
   -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
   -o-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
-  display: inline-block;
-  list-style: none;
-  margin: 25px 50px 25px 0;
-  width: 284px;
-  vertical-align: top;
+  border-radius: 2px;
+  height: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 350px;
 }
 
-.about-section-card-list li:last-child{
-  margin-right: 0;
+.card-header{
+  background-image: url('../images/process-img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 140px;
+  overflow: hidden;
 }
 
-.about-section-card-list li img{
+.card-avatar{
+  border: 2px solid #FFFFFF;
+  border-radius: 30em;
+  height: 100px;
+  margin: -50px auto 0;
+  overflow: hidden;
+  width: 100px;
+}
+
+.card-avatar img{
+  height: 100%;
   width: 100%;
 }
 
-.card-content{
+.card-bio{
   padding: 20px;
 }
 
-.card-content .button{
-  display: block;
-  margin: 20px auto 5px;
-}
-
-
-/* =====================
- 4. Footer
-====================== */
-.footer{
-  background-color: #CCCCCC;
-  padding: 50px 0;
+.card-name{
   text-align: center;
 }
 
-.footer h6{
+.card-contact-information{
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.card-contact-information li{
+  display: inline;
+  font-size: 14px;
+}
+
+.card-section{
+  margin: 20px auto 30px;
+}
+
+.card-section.last{
   margin-bottom: 0;
+}
+
+.card-section-tag{
+  color: #959595;
+  text-transform: uppercase;
 }
